@@ -47,6 +47,9 @@ button {
   visibility: visible;
 }
 
-.shadow-dark {
+.shadow-active {
   box-shadow: #74c774 0px 0px 0px 4px;
+}
+.shadow-dark {
+  box-shadow: rgb(22 163 74) 0px 0px 0px 4px;
 }

@@ -109,7 +109,9 @@ const FormPage3 = () => {
             onChange={(e) => setAdvice(e.target.value)}
           />
         </div>
-        <button onClick={submitHandler}>Mark as complete</button>
+        <button className="mt-3" onClick={submitHandler}>
+          Mark as complete
+        </button>
       </form>
     </div>
   );

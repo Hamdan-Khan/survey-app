@@ -155,7 +155,9 @@ const FormPage2 = () => {
             </option>
           </select>
         </div>
-        <button onClick={submitHandler}>Next</button>
+        <button className="mt-3" onClick={submitHandler}>
+          Next
+        </button>
       </form>
     </div>
   );

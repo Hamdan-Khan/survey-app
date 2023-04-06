@@ -138,7 +138,7 @@ const FormPage1 = () => {
             <option value="Other..">Other..</option>
           </select>
         </div>
-        <button className="mt-1" onClick={submitHandler}>
+        <button className="mt-3" onClick={submitHandler}>
           Next
         </button>
       </form>

@@ -88,7 +88,7 @@ const Completion = () => {
   }, []);
   return (
     <div>
-      <div className="mx-auto w-max max-w-[75vw] bg-zinc-100 p-6 rounded-xl shadow-xl border mb-10">
+      <div className="mx-auto w-max max-w-[90vw] sm:max-w-[75vw] bg-zinc-100 p-6 rounded-xl shadow-xl border mb-5">
         <h1 className="text-2xl font-bold text-center underline mb-6">
           Your Response:
         </h1>
