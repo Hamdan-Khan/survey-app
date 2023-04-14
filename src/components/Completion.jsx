@@ -92,6 +92,10 @@ const Completion = () => {
         <h1 className="text-2xl font-bold text-center underline mb-6">
           Your Response:
         </h1>
+        <h2 className="text-red-600 mb-3">
+          <span className="font-bold underline">NOTE:</span> Your response is
+          only visible to you and not saved anywhere at the moment.
+        </h2>
         <ul className="">
           {data.map((x, index) => {
             const { ques, res } = x;

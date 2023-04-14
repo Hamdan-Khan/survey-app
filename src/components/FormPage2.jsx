@@ -6,8 +6,8 @@ const FormPage2 = () => {
   const setFormState = useStore((state) => state.setFormState);
   const setFormStatus = useStore((state) => state.setFormStatus);
 
-  const [source, setSource] = useState("sel");
-  const [inpMethod, setInpMethod] = useState("sel");
+  // const [source, setSource] = useState("sel");
+  // const [inpMethod, setInpMethod] = useState("sel");
 
   const [
     reliable,
@@ -18,6 +18,10 @@ const FormPage2 = () => {
     setMethod,
     setOsource,
     setSatisf,
+    inpSource,
+    inpMethod,
+    setInpSource,
+    setInpMethod,
   ] = useStore(
     (state) => [
       state.reliable,
@@ -28,6 +32,10 @@ const FormPage2 = () => {
       state.setMethod,
       state.setOsource,
       state.setSatisf,
+      state.inpSource,
+      state.inpMethod,
+      state.setInpSource,
+      state.setInpMethod,
     ],
     shallow
   );
@@ -113,7 +121,7 @@ const FormPage2 = () => {
             className="px-3 py-1.5"
             id="osource"
             onChange={(e) => {
-              setSource(e.target.value);
+              setInpSource(e.target.value);
               setOsource(e.target.value);
             }}
             name="osource"
@@ -124,7 +132,7 @@ const FormPage2 = () => {
             </option>
             <option value="">Yes</option>
           </select>
-          {source === "" ? (
+          {inpSource === "" ? (
             <input
               type="text"
               name="osource"

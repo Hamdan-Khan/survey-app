@@ -1,5 +1,4 @@
 import { create } from "zustand";
-
 const useStore = create((set) => ({
   formState: "one",
   setFormState: (newState) => set((state) => ({ formState: newState })),
@@ -29,6 +28,10 @@ const useStore = create((set) => ({
   setAdvice: (newState) => set((state) => ({ advice: newState })),
   formStatus: "one",
   setFormStatus: (newState) => set((state) => ({ formStatus: newState })),
+  inpSource: "sel",
+  setInpSource: (newState) => set((state) => ({ inpSource: newState })),
+  inpMethod: "sel",
+  setInpMethod: (newState) => set((state) => ({ inpMethod: newState })),
 }));
 
 export default useStore;
